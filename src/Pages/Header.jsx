@@ -19,19 +19,92 @@ function Header() {
   };
 
   return (
-    <main className=" ">
-      <div className=" flex items-center justify-between pb-5 pt-5 pl-5 pr-5 ">
+    <main>
+      <div className="xs:hidden tablet:block">
+        <div className="flex flex-col gap-y-8 items-center justify-center pb-8 pt-5 pr-14 pl-14 ">
+          <p className="font-fontAnt font-normal text-[28px] leading-9 tracking-[-1.05px] text-white uppercase">
+            The Planets
+          </p>
+          <div className="flex items-center justify-center gap-x-7 ">
+            <div>
+              <Link
+                to="/planets/mercury"
+                className=" font-fontSpart font-medium text-sm leading-6 tracking-[1.5px] uppercase text-white cursor-pointer"
+              >
+                mercury
+              </Link>
+            </div>
+            <div>
+              <Link
+                to="/planets/venus"
+                className=" font-fontSpart font-medium text-sm leading-6 tracking-[1.5px] uppercase text-white cursor-pointer"
+              >
+                venus
+              </Link>
+            </div>
+            <div>
+              <Link
+                to="/planets/earth"
+                className=" font-fontSpart font-medium text-sm leading-6 tracking-[1.5px] uppercase text-white cursor-pointer"
+              >
+                earth
+              </Link>
+            </div>
+            <div>
+              <Link
+                to="/planets/mars"
+                className=" font-fontSpart font-medium text-sm leading-6 tracking-[1.5px] uppercase text-white cursor-pointer"
+              >
+                mars
+              </Link>
+            </div>
+            <div>
+              <Link
+                to="/planets/jupiter"
+                className=" font-fontSpart font-medium text-sm leading-6 tracking-[1.5px] uppercase text-white cursor-pointer"
+              >
+                jupiter
+              </Link>
+            </div>
+            <div>
+              <Link
+                to="/planets/saturn"
+                className=" font-fontSpart font-medium text-sm leading-6 tracking-[1.5px] uppercase text-white cursor-pointer"
+              >
+                saturn
+              </Link>
+            </div>
+            <div>
+              <Link
+                to="/planets/uranus"
+                className=" font-fontSpart font-medium text-sm leading-6 tracking-[1.5px] uppercase text-white cursor-pointer"
+              >
+                uranus
+              </Link>
+            </div>
+            <div>
+              <Link
+                to="/planets/neptune"
+                className=" font-fontSpart font-medium text-sm leading-6 tracking-[1.5px] uppercase text-white cursor-pointer"
+              >
+                neptune
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className=" flex items-center justify-between pb-5 pt-5 pl-5 pr-5 tablet:hidden">
         <p className="font-fontAnt font-normal text-[28px] leading-9 tracking-[-1.05px] text-white uppercase">
           The Planets
         </p>
         <img
           src={navBar}
           onClick={change}
-          className="cursor-pointer"
+          className="cursor-pointer tablet:hidden"
           alt="Hamburger icon"
         />
       </div>
-      <hr className=" opacity-20 border-[#FFF]" />
+      <hr className=" opacity-20 border-[0.5px] border-[#FFF]" />
 
       {isActive ? (
         <div className="flex flex-col  pl-6 pr-7">
