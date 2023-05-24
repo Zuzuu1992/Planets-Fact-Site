@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=League+Spartan:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=League+Spartan:wght@200;300;400;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,6 +12,6 @@
 body {
   width: 100vw;
   height: 100vh;
-  font-size: 40px;
   background-color: #070724;
+  overflow-x: hidden;
 }
