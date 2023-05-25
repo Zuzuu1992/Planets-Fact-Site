@@ -68,28 +68,30 @@ function Planets() {
       </div>
       <hr className=" opacity-20 border-[#FFF]" />
 
-      <div className=" flex flex-col items-center  justify-center desktop:flex-row  desktop:gap-x-[190px] desktop:pl-[220px] desktop:pr-[220px] desktop:pb-[40px]  desktop:pt-[80px]">
-        <div className="desktop:relative ">
-          <img
-            className=" h-[170px] max-w-none mt-20 mb-15 tablet:h-[253px] desktop:h-[450px] desktop:mt-0 desktop:mb-0 desktop:relative"
-            src={
-              inAction === "overview"
-                ? planet.images.planet
-                : inAction === "structure"
-                ? planet.images.internal
-                : inAction === "surface"
-                ? planet.images.planet
-                : null
-            }
-          />
-          <img
-            className="h-[100px] translate-y-[-65px] tablet:h-[135px] tablet:translate-y-[-80px] desktop:h-[165px] desktop:translate-x-[160px] desktop:translate-y-[-100px] "
-            src={inAction === "surface" ? planet.images.geology : null}
-          />
+      <div className=" flex flex-col items-center  justify-center desktop:flex-row desktop:justify-between  desktop:gap-x-[190px] desktop:pl-[165px] desktop:pr-[165px] desktop:pb-[40px]  desktop:pt-[80px]">
+        <div>
+          <div className="desktop:relative">
+            <img
+              className=" h-[170px] max-w-none mt-20 mb-15 tablet:h-[253px] desktop:h-[450px] desktop:mt-0 desktop:mb-0 "
+              src={
+                inAction === "overview"
+                  ? planet.images.planet
+                  : inAction === "structure"
+                  ? planet.images.internal
+                  : inAction === "surface"
+                  ? planet.images.planet
+                  : null
+              }
+            />
+            <img
+              className="h-[100px] translate-y-[-65px] tablet:h-[135px] tablet:translate-y-[-80px] desktop:h-[165px] desktop:translate-x-[160px] desktop:translate-y-[-100px] desktop:absolute "
+              src={inAction === "surface" ? planet.images.geology : null}
+            />
+          </div>
         </div>
 
-        <div className="tablet:flex tablet:justify-between tablet:gap-x-16 tablet:pr-6 tablet:items-center desktop:flex-col desktop:items-start desktop:gap-y-10">
-          <div className=" flex flex-col items-center justify-center gap-y-4 pr-6 pl-6  tablet:items-start desktop:pr-0 desktop:pl-0 desktop:gap-y-5">
+        <div className="tablet:flex tablet:justify-between tablet:gap-x-16 tablet:pr-6 tablet:items-center desktop:flex-col desktop:items-start desktop:gap-y-10 desktop:pr-0">
+          <div className=" flex flex-col items-center justify-center gap-y-4 pr-6 pl-6  tablet:items-start desktop:pr-0 desktop:pl-0 desktop:gap-y-5 desktop:w-full">
             <p className=" text-white font-fontAnt font-normal text-[40px] leading-[52px] uppercase desktop:text-[80px] desktop:leading-[103px]">
               {planet.name}
             </p>
@@ -125,10 +127,10 @@ function Planets() {
             </div>
           </div>
           <div className="xs:hidden tablet:block">
-            <div className="flex flex-col gap-y-5">
+            <div className="flex flex-col gap-y-5 desktop:w-full">
               <div
                 onClick={whenOverview}
-                className="border-[1px] border-white/20 pt-3 pb-3 pr-40 pl-6 cursor-pointer transition-all duration-300 tablet:hover:bg-[#D8D8D8]/20 desktop:pt-5 desktop:pb-5 desktop:pr-52 desktop:pl-7  "
+                className="border-[1px] border-white/20 pt-3 pb-3 pr-40 pl-6 cursor-pointer transition-all duration-300 tablet:hover:bg-[#D8D8D8]/20 desktop:pt-5 desktop:pb-5 desktop:pr-52 desktop:pl-7 desktop:w-[473px] "
                 style={{
                   backgroundColor:
                     inAction === "overview" ? planet.color : null,
