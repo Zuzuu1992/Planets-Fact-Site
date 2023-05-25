@@ -21,7 +21,7 @@ function Header() {
   return (
     <main>
       <div className="xs:hidden tablet:block">
-        <div className="flex flex-col gap-y-8 items-center justify-center pb-8 pt-5 pr-14 pl-14 ">
+        <div className="flex flex-col gap-y-8 items-center justify-center pb-8 pt-5 pr-14 pl-14 desktop:flex-row desktop:justify-between desktop:pt-8 desktop:pr-16 desktop:pl-16 ">
           <p className="font-fontAnt font-normal text-[28px] leading-9 tracking-[-1.05px] text-white uppercase">
             The Planets
           </p>
@@ -29,7 +29,7 @@ function Header() {
             <div>
               <Link
                 to="/planets/mercury"
-                className=" font-fontSpart font-medium text-sm leading-6 tracking-[1.5px] uppercase text-white cursor-pointer"
+                className=" font-fontSpart font-medium text-sm leading-6 tracking-[1.5px] uppercase text-white cursor-pointer transition-all duration-300 desktop:opacity-75 desktop:hover:opacity-100"
               >
                 mercury
               </Link>
@@ -37,7 +37,7 @@ function Header() {
             <div>
               <Link
                 to="/planets/venus"
-                className=" font-fontSpart font-medium text-sm leading-6 tracking-[1.5px] uppercase text-white cursor-pointer"
+                className=" font-fontSpart font-medium text-sm leading-6 tracking-[1.5px] uppercase text-white cursor-pointer transition-all duration-300 desktop:opacity-75 desktop:hover:opacity-100"
               >
                 venus
               </Link>
@@ -45,7 +45,7 @@ function Header() {
             <div>
               <Link
                 to="/planets/earth"
-                className=" font-fontSpart font-medium text-sm leading-6 tracking-[1.5px] uppercase text-white cursor-pointer"
+                className=" font-fontSpart font-medium text-sm leading-6 tracking-[1.5px] uppercase text-white cursor-pointer transition-all duration-300 desktop:opacity-75 desktop:hover:opacity-100"
               >
                 earth
               </Link>
@@ -53,7 +53,7 @@ function Header() {
             <div>
               <Link
                 to="/planets/mars"
-                className=" font-fontSpart font-medium text-sm leading-6 tracking-[1.5px] uppercase text-white cursor-pointer"
+                className=" font-fontSpart font-medium text-sm leading-6 tracking-[1.5px] uppercase text-white cursor-pointer transition-all duration-300 desktop:opacity-75 desktop:hover:opacity-100"
               >
                 mars
               </Link>
@@ -61,7 +61,7 @@ function Header() {
             <div>
               <Link
                 to="/planets/jupiter"
-                className=" font-fontSpart font-medium text-sm leading-6 tracking-[1.5px] uppercase text-white cursor-pointer"
+                className=" font-fontSpart font-medium text-sm leading-6 tracking-[1.5px] uppercase text-white cursor-pointer transition-all duration-300 desktop:opacity-75 desktop:hover:opacity-100"
               >
                 jupiter
               </Link>
@@ -69,7 +69,7 @@ function Header() {
             <div>
               <Link
                 to="/planets/saturn"
-                className=" font-fontSpart font-medium text-sm leading-6 tracking-[1.5px] uppercase text-white cursor-pointer"
+                className=" font-fontSpart font-medium text-sm leading-6 tracking-[1.5px] uppercase text-white cursor-pointer transition-all duration-300 desktop:opacity-75 desktop:hover:opacity-100"
               >
                 saturn
               </Link>
@@ -77,7 +77,7 @@ function Header() {
             <div>
               <Link
                 to="/planets/uranus"
-                className=" font-fontSpart font-medium text-sm leading-6 tracking-[1.5px] uppercase text-white cursor-pointer"
+                className=" font-fontSpart font-medium text-sm leading-6 tracking-[1.5px] uppercase text-white cursor-pointer transition-all duration-300 desktop:opacity-75 desktop:hover:opacity-100"
               >
                 uranus
               </Link>
@@ -85,7 +85,7 @@ function Header() {
             <div>
               <Link
                 to="/planets/neptune"
-                className=" font-fontSpart font-medium text-sm leading-6 tracking-[1.5px] uppercase text-white cursor-pointer"
+                className=" font-fontSpart font-medium text-sm leading-6 tracking-[1.5px] uppercase text-white cursor-pointer transition-all duration-300 desktop:opacity-75 desktop:hover:opacity-100"
               >
                 neptune
               </Link>
