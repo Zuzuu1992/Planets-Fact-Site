@@ -68,11 +68,11 @@ function Planets() {
       </div>
       <hr className=" opacity-20 border-[#FFF]" />
 
-      <div className=" flex flex-col items-center  justify-center desktop:flex-row desktop:justify-between  desktop:gap-x-[190px] desktop:pl-[165px] desktop:pr-[165px] desktop:pb-[40px]  desktop:pt-[80px]">
+      <div className=" flex flex-col items-center  justify-center desktop:flex-row desktop:justify-between  desktop:gap-x-[190px] desktop:pl-[165px] desktop:pr-[165px] desktop:pb-[40px]  desktop:pt-[85px]">
         <div>
           <div className="desktop:relative">
             <img
-              className=" h-[170px] max-w-none mt-20 mb-15 tablet:h-[253px] desktop:h-[450px] desktop:mt-0 desktop:mb-0 "
+              className=" h-[170px] max-w-none mt-20 mb-15 tablet:h-[253px] desktop:h-[450px] desktop:mt-0 desktop:mb-0 hover:animate-spin cursor-pointer "
               src={
                 inAction === "overview"
                   ? planet.images.planet
@@ -83,10 +83,13 @@ function Planets() {
                   : null
               }
             />
-            <img
-              className="h-[100px] translate-y-[-65px] tablet:h-[135px] tablet:translate-y-[-80px] desktop:h-[165px] desktop:translate-x-[160px] desktop:translate-y-[-100px] desktop:absolute "
-              src={inAction === "surface" ? planet.images.geology : null}
-            />
+            <div className=" translate-y-[-55px] translate-x-[45px]  tablet:translate-y-[-80px] tablet:translate-x-[70px]  desktop:translate-x-[160px] desktop:translate-y-[-100px] desktop:absolute  ">
+              <img
+                className="h-[100px] tablet:h-[135px] desktop:h-[165px] hover:animate-increase cursor-pointer 
+              origin-center "
+                src={inAction === "surface" ? planet.images.geology : null}
+              />
+            </div>
           </div>
         </div>
 
@@ -126,11 +129,11 @@ function Planets() {
               <img src={Source} />
             </div>
           </div>
-          <div className="xs:hidden tablet:block">
+          <div className="xs:hidden tablet:block desktop:w-full">
             <div className="flex flex-col gap-y-5 desktop:w-full">
               <div
                 onClick={whenOverview}
-                className="border-[1px] border-white/20 pt-3 pb-3 pr-40 pl-6 cursor-pointer transition-all duration-300 tablet:hover:bg-[#D8D8D8]/20 desktop:pt-5 desktop:pb-5 desktop:pr-52 desktop:pl-7 desktop:w-[473px] "
+                className="border-[1px] border-white/20 pt-3 pb-3 pr-40 pl-6 cursor-pointer transition-all duration-300 tablet:hover:bg-[#D8D8D8]/20 desktop:pt-5 desktop:pb-5 desktop:pr-52 desktop:pl-7  "
                 style={{
                   backgroundColor:
                     inAction === "overview" ? planet.color : null,
@@ -180,7 +183,7 @@ function Planets() {
         </div>
       </div>
 
-      <div className=" flex flex-col gap-y-2 pl-6 pr-6 pb-10 pt-7 tablet:flex-row tablet:gap-x-3 tablet:pt-10 desktop:pr-[165px] desktop:pl-[165px] desktop:gap-x-7 desktop:pb-16 ">
+      <div className=" flex flex-col gap-y-2 pl-6 pr-6 pb-10 pt-7 tablet:flex-row tablet:gap-x-3 tablet:pt-10 desktop:pr-[165px] desktop:pl-[165px] desktop:gap-x-7 desktop:pb-16 desktop:pt-16 ">
         <div className=" flex items-center justify-between border-[1px] border-white/20 pt-4 pb-4 pr-6 pl-6 gap-x-10 tablet:flex-col tablet:grow tablet:items-start tablet:gap-y-2 desktop:pt-7 desktop:pb-7 desktop:pr-7 desktop:pl-7 desktop:gap-y-3">
           <p className=" text-white opacity-50 font-fontSpart font-medium text-[11px] leading-[16px] tracking-[1.5px] uppercase desktop:text-[14px] desktop:leading-[20px] desktop:tracking-[1.7px] ">
             Rotation time

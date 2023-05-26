@@ -5,7 +5,7 @@ import MobileNav from "../../public/assets/icon-hamburger.svg";
 import Cross from "../../public/assets/icons-close.svg";
 import Arrow from "../../public/assets/icon-chevron.svg";
 
-function Header() {
+function Header(planet, name) {
   const [isActive, setActive] = useState(false);
   const [navBar, setNavBar] = useState(MobileNav);
 
@@ -21,12 +21,12 @@ function Header() {
   return (
     <main>
       <div className="xs:hidden tablet:block">
-        <div className="flex flex-col gap-y-8 items-center justify-center pb-8 pt-5 pr-14 pl-14 desktop:flex-row desktop:justify-between desktop:pt-8 desktop:pr-16 desktop:pl-16 ">
-          <p className="font-fontAnt font-normal text-[28px] leading-9 tracking-[-1.05px] text-white uppercase">
+        <div className="flex flex-col gap-y-8 items-center justify-center pb-6 pt-5 pr-14 pl-14 desktop:flex-row desktop:justify-between desktop:pt-0 desktop:pr-16 desktop:pl-16 ">
+          <p className="font-fontAnt font-normal text-[28px] leading-9 tracking-[-1.05px] text-white uppercase desktop:pt-5">
             The Planets
           </p>
           <div className="flex items-center justify-center gap-x-7 ">
-            <div>
+            <div className="desktop:border-[#070724] desktop:border-t-4 desktop:pt-5 desktop:hover:border-[#419EBB]">
               <Link
                 to="/planets/mercury"
                 className=" font-fontSpart font-medium text-sm leading-6 tracking-[1.5px] uppercase text-white cursor-pointer transition-all duration-300 desktop:opacity-75 desktop:hover:opacity-100"
@@ -34,7 +34,7 @@ function Header() {
                 mercury
               </Link>
             </div>
-            <div>
+            <div className="desktop:border-[#070724] desktop:border-t-4 desktop:pt-5 desktop:hover:border-[#EDA249]">
               <Link
                 to="/planets/venus"
                 className=" font-fontSpart font-medium text-sm leading-6 tracking-[1.5px] uppercase text-white cursor-pointer transition-all duration-300 desktop:opacity-75 desktop:hover:opacity-100"
@@ -42,7 +42,7 @@ function Header() {
                 venus
               </Link>
             </div>
-            <div>
+            <div className="desktop:border-[#070724] desktop:border-t-4 desktop:pt-5 desktop:hover:border-[#6D2ED5]">
               <Link
                 to="/planets/earth"
                 className=" font-fontSpart font-medium text-sm leading-6 tracking-[1.5px] uppercase text-white cursor-pointer transition-all duration-300 desktop:opacity-75 desktop:hover:opacity-100"
@@ -50,7 +50,7 @@ function Header() {
                 earth
               </Link>
             </div>
-            <div>
+            <div className="desktop:border-[#070724] desktop:border-t-4 desktop:pt-5 desktop:hover:border-[#D14C32]">
               <Link
                 to="/planets/mars"
                 className=" font-fontSpart font-medium text-sm leading-6 tracking-[1.5px] uppercase text-white cursor-pointer transition-all duration-300 desktop:opacity-75 desktop:hover:opacity-100"
@@ -58,7 +58,7 @@ function Header() {
                 mars
               </Link>
             </div>
-            <div>
+            <div className="desktop:border-[#070724] desktop:border-t-4 desktop:pt-5 desktop:hover:border-[#D83A34]">
               <Link
                 to="/planets/jupiter"
                 className=" font-fontSpart font-medium text-sm leading-6 tracking-[1.5px] uppercase text-white cursor-pointer transition-all duration-300 desktop:opacity-75 desktop:hover:opacity-100"
@@ -66,7 +66,7 @@ function Header() {
                 jupiter
               </Link>
             </div>
-            <div>
+            <div className="desktop:border-[#070724] desktop:border-t-4 desktop:pt-5 desktop:hover:border-[#CD5120]">
               <Link
                 to="/planets/saturn"
                 className=" font-fontSpart font-medium text-sm leading-6 tracking-[1.5px] uppercase text-white cursor-pointer transition-all duration-300 desktop:opacity-75 desktop:hover:opacity-100"
@@ -74,7 +74,7 @@ function Header() {
                 saturn
               </Link>
             </div>
-            <div>
+            <div className="desktop:border-[#070724] desktop:border-t-4 desktop:pt-5 desktop:hover:border-[#1EC1A2]">
               <Link
                 to="/planets/uranus"
                 className=" font-fontSpart font-medium text-sm leading-6 tracking-[1.5px] uppercase text-white cursor-pointer transition-all duration-300 desktop:opacity-75 desktop:hover:opacity-100"
@@ -82,7 +82,7 @@ function Header() {
                 uranus
               </Link>
             </div>
-            <div>
+            <div className="desktop:border-[#070724] desktop:border-t-4 desktop:pt-5 desktop:hover:border-[#2D68F0]">
               <Link
                 to="/planets/neptune"
                 className=" font-fontSpart font-medium text-sm leading-6 tracking-[1.5px] uppercase text-white cursor-pointer transition-all duration-300 desktop:opacity-75 desktop:hover:opacity-100"

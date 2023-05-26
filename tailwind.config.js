@@ -13,6 +13,16 @@ export default {
         fontAnt: "'Antonio', sans-serif",
         fontSpart: "'League Spartan', sans-serif",
       },
+      animation: {
+        spin: "spin 36s linear infinite",
+        increase: "increase 6s ease-out infinite",
+      },
+      keyframes: {
+        increase: {
+          "0%": { transform: "scale(1)" },
+          "100%": { transform: "scale(1.5)" },
+        },
+      },
     },
   },
   plugins: [],
